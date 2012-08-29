@@ -46,9 +46,9 @@
 
 <h1>Params</h1>
 
-* <strong>@param ColorTone.RED</strong> - String(); Defines a range of blue colors to be randomized.
-* <strong>@param ColorTone.GREEN</strong> - String(); Defines a range of blue colors to be randomized.
-* <strong>@param ColorTone.BLUE</strong> - String(); Defines a range of blue colors to be randomized.
+* <strong>@param ColorTone.RED</strong> - String(); Defines a range of RED colors to be randomized.
+* <strong>@param ColorTone.GREEN</strong> - String(); Defines a range of GREEN colors to be randomized.
+* <strong>@param ColorTone.BLUE</strong> - String(); Defines a range of BLUE colors to be randomized.
 
 <h1>Customization</h1>
 

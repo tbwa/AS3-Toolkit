@@ -14,7 +14,7 @@
 		}
 		for(var i:int = 0; i < 50; i++){
 			a = new Sprite();
-			a.graphics.beginFill(<strong>myColor.randomColor()</strong>);
+			a.graphics.beginFill(myColor.randomColor());
 			a.graphics.drawRect(Math.random() * stage.stageWidth, Math.random() * stage.stageHeight, 20, 20);
 			a.graphics.endFill();
 			addChild(a);	
@@ -34,7 +34,7 @@
 		}
 		for(var i:int = 0; i < 50; i++){
 			a = new Sprite();
-			a.graphics.beginFill(<strong>myColor.randomColor(ColorTone.BLUE)</strong>);
+			a.graphics.beginFill(myColor.randomColor(ColorTone.BLUE));
 			a.graphics.drawRect(Math.random() * stage.stageWidth, Math.random() * stage.stageHeight, 20, 20);
 			a.graphics.endFill();
 			addChild(a);	

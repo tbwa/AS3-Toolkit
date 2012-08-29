@@ -40,12 +40,9 @@ package com.utils.color
 					break;
 			}
 			
-			return RGBtoHEX (myColorObj);
+			return RGBtoHEX.convert(myColorObj);
 		}
 		
-		private function RGBtoHEX(colorObj:Object):*{
-			return(colorObj.r<<16 | colorObj.g<<8 | colorObj.b);
-		}
 		
 		private function randomizeColor(colorObj:Object, min:Number, max:Number):Object{
 			for(var i:* in colorObj){

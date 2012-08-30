@@ -31,17 +31,6 @@ package com.utils.numbers
 			return radians * (180 / Math.PI);
 		}
 		
-		/**
-		 * 
-		 * @param value
-		 * @param percentageValue
-		 * @return the percentage of any number
-		 * @usage NumberConverter.percentageValue(100, 10) // output 10;
-		 * 
-		 */		
-		public static function percentageValue(value:Number, percentageValue:Number):Number{
-			return value * (percentageValue / 100);
-		}
 		
 		/**
 		 * 

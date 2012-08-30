@@ -38,6 +38,10 @@
 	v.push(10);
 	MathUtils.getAverage(new Vector.<Number>) // output is 4;
 
+<p>Getting average between a bulk of numbers</p>
+	MathUtils.snapTo(26, 50) // outputs 50
+	MathUtils.snapTo(24, 50) // outputs 0
+
 
 <h1>Methods</h1>
 
@@ -45,6 +49,7 @@
 * <strong>getAngle</strong> - Number(); Returns the angle of two points.
 * <strong>getDistance</strong> - Number(); Returns the distance in Number between two points.
 * <strong>getAverage</strong> - Number(); Returns average result.
+* <strong>snapTo</strong> - Number(); Returns the nearest number to the gap or it's multiples. Gap acts as an interval.
 
 
 With all that done, you're good to mess around. Have a nice coding.

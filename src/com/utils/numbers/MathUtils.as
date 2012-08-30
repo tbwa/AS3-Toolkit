@@ -78,13 +78,10 @@ package com.utils.numbers
 		 * @return the nearest number to the gap or it's multiples. Gap acts as an interval.
 		 * 
 		 */		
-		public static function snapTo(dynamicValue:Number, gap:Number, start:Number=0 ):Number
-		{
+		public static function snapTo(dynamicValue:Number, gap:Number):Number{
 			if(gap == 0) return dynamicValue;
-			
-			dynamicValue -= start;
 			dynamicValue = gap * Math.round(dynamicValue / gap);
-			return start + dynamicValue;
+			return  dynamicValue;			
 		}
 		
 		

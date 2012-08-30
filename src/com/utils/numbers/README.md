@@ -38,7 +38,7 @@
 	v.push(10);
 	MathUtils.getAverage(new Vector.<Number>) // output is 4;
 
-<p>Getting average between a bulk of numbers</p>
+<p>Snapping a number to the closest interval</p>
 	MathUtils.snapTo(26, 50) // outputs 50
 	MathUtils.snapTo(24, 50) // outputs 0
 

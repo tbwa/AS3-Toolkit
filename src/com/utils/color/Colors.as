@@ -24,45 +24,38 @@ package com.utils.color
 					myColorObj.r = 255;
 					myColorObj.g = 100;
 					myColorObj.b = 100;
-					randomizeColor(myColorObj, minColorChannel, maxColorChannel);
 					break;
 				case "green":
 					myColorObj.r = 100;
 					myColorObj.g = 255;
 					myColorObj.b = 100;
-					randomizeColor(myColorObj, minColorChannel, maxColorChannel);
 					break;
 				case "blue":
 					myColorObj.r = 100;
 					myColorObj.g = 100;
 					myColorObj.b = 255;
-					randomizeColor(myColorObj, minColorChannel, maxColorChannel);
 					break;
 				case "customRange":
 					HEXtoRGB.convert(hex);
 					myColorObj.r = HEXtoRGB.convert(hex).red;
 					myColorObj.g = HEXtoRGB.convert(hex).green;
 					myColorObj.b = HEXtoRGB.convert(hex).blue;
-					randomizeColor(myColorObj, minColorChannel, maxColorChannel);
 					break;
 			}
+			
+			randomizeColor();
 			
 			return RGBtoHEX.convert(myColorObj);
 		}
 		
-		
-		private function randomizeColor(colorObj:Object, min:Number, max:Number):Object{
-			for(var i:* in colorObj){
-				var channel:Number = colorObj[i];
-				var randomize:Number = min + Math.random() * (max-min);
+		private function randomizeColor():void{
+			for(var i:* in myColorObj){
+				var channel:Number = myColorObj[i];
+				var randomize:Number = minColorChannel + Math.random() * (maxColorChannel-minColorChannel);
 				channel += (Math.round(Math.random()) ? randomize : -randomize);
-				colorObj[i] = Math.max(0, Math.min(channel, 255));
+				myColorObj[i] = Math.max(0, Math.min(channel, 255));
 			}
-			return colorObj;
 		}
-		
-		
-		
 		
 	}
 }

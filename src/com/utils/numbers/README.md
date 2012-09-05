@@ -8,6 +8,12 @@
 * <strong>radiansToDegrees</strong> - Number(); Returns a degree value.
 * <strong>secondsToMilliseconds</strong> - Number(); Returns milliseconds.
 * <strong>millisecondsToSeconds</strong> - Number(); Returns seconds.
+* <strong>numberToCurrency</strong> - Number(); Returns concurrency.
+
+<p>Converting a number to concurrency</p>
+	NumberConverter.numberToCurrency(2); // returns 2
+	NumberConverter.numberToCurrency(12342); //returns 12,342.00
+	NumberConverter.numberToCurrency(200000000); // returns 200,000,000.00
 
 
 ------------------------------------------------------------------------------------------------------------------------------

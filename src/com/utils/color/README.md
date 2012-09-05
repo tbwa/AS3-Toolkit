@@ -21,6 +21,8 @@
 		}	
 	}
 
+![ScreenShot](https://raw.github.com/tbwa/AS3-Toolkit/master/assets/colors/colorsRandom.png)
+
 
 <p>Randomizing between a specific range of colors (BLUE)</p>
 	var myColor:Colors = new Colors();
@@ -40,6 +42,8 @@
 		}	
 	}
 
+![ScreenShot](https://raw.github.com/tbwa/AS3-Toolkit/master/assets/colors/colorsBlue.png)
+
 
 <p>Randomizing between a specific range of color using a specify HEX</p>
 	var myColor:Colors = new Colors();
@@ -58,6 +62,8 @@
 			addChild(a);	
 		}	
 	}
+
+![ScreenShot](https://raw.github.com/tbwa/AS3-Toolkit/master/assets/colors/colorsYellow.png)
 
 
 	

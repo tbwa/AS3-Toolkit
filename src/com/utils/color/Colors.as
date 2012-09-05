@@ -15,7 +15,7 @@ package com.utils.color
 		private var maxColorChannel:Number = 50;
 		private var myColorObj:Object = {};
 		
-		public function randomColor(tone:String = "globalRange"):uint{
+		public function randomColor(tone:String = "globalRange", hex:uint = 123456789123456789):uint{
 			switch (tone){
 				case "globalRange":
 					return Math.random() * 0xFFFFFF;
@@ -36,6 +36,13 @@ package com.utils.color
 					myColorObj.r = 100;
 					myColorObj.g = 100;
 					myColorObj.b = 255;
+					randomizeColor(myColorObj, minColorChannel, maxColorChannel);
+					break;
+				case "customRange":
+					HEXtoRGB.convert(hex);
+					myColorObj.r = HEXtoRGB.convert(hex).red;
+					myColorObj.g = HEXtoRGB.convert(hex).green;
+					myColorObj.b = HEXtoRGB.convert(hex).blue;
 					randomizeColor(myColorObj, minColorChannel, maxColorChannel);
 					break;
 			}

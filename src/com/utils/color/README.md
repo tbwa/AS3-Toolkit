@@ -1,5 +1,5 @@
 <h1>Colors</h1>
-<h2>It's a Color tool that allows randomize between all the colors or only a specific range of tone (RED, GREEN, BLUE)</h2>
+<h2>It's a Color tool that allows randomize between all the colors or only a specific range of tone (RED, GREEN, BLUE) or the HEX code you want</h2>
 
 
 
@@ -22,8 +22,7 @@
 	}
 
 
-<p>Randomizing between a specific range of colors</p>
-
+<p>Randomizing between a specific range of colors (BLUE)</p>
 	var myColor:Colors = new Colors();
 	var a:Sprite;
 	stage.addEventListener(MouseEvent.CLICK, addSprites);
@@ -35,6 +34,25 @@
 		for(var i:int = 0; i < 50; i++){
 			a = new Sprite();
 			a.graphics.beginFill(myColor.randomColor(ColorTone.BLUE));
+			a.graphics.drawRect(Math.random() * stage.stageWidth, Math.random() * stage.stageHeight, 20, 20);
+			a.graphics.endFill();
+			addChild(a);	
+		}	
+	}
+
+
+<p>Randomizing between a specific range of color using a specify HEX</p>
+	var myColor:Colors = new Colors();
+	var a:Sprite;
+	stage.addEventListener(MouseEvent.CLICK, addSprites);
+
+	function addSprites(e:MouseEvent):void{
+		for(;numChildren;){
+			removeChildAt(0);
+		}
+		for(var i:int = 0; i < 50; i++){
+			a = new Sprite();
+			a.graphics.beginFill(myColor.randomColor("customRange", 0xffea00)); // 0xffea00 is a yellow color, you will see a bunch of different yellow squares 
 			a.graphics.drawRect(Math.random() * stage.stageWidth, Math.random() * stage.stageHeight, 20, 20);
 			a.graphics.endFill();
 			addChild(a);	

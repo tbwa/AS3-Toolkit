@@ -11,7 +11,7 @@
 * <strong>numberToCurrency</strong> - Number(); Returns concurrency.
 
 <p>Converting a number to concurrency</p>
-	NumberConverter.numberToCurrency(2); // returns 2
+	NumberConverter.numberToCurrency(2); // returns 2.00
 	NumberConverter.numberToCurrency(12342); //returns 12,342.00
 	NumberConverter.numberToCurrency(200000000); // returns 200,000,000.00
 
